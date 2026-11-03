@@ -1,7 +1,7 @@
 ﻿selian_generic_rite = {
 	trigger = {
 		exists = scope:founder
-		scope:faith.religion = religion:selian_religion
+		scope:faith.religion = religion:nars_religion
 	}
 
 	custom_faith_icons = {

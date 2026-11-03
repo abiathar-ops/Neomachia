@@ -19,10 +19,10 @@ tenet_nars_endgame = {
 	}
 
 	is_shown = {
-		religion_tag = selian_religion
+		religion_tag = nars_religion
 	}
 	can_pick = {
-		religion_tag = selian_religion
+		religion_tag = nars_religion
 		custom_description = {
 			text = narsokratia_must_be_faithfully_restored_trigger
 			has_global_variable = nars_endgame_tenet_unlocked
@@ -101,10 +101,10 @@ tenet_nars_pantheon = {
 	}
 
 	is_shown = {
-		religion_tag = selian_religion
+		religion_tag = nars_religion
 	}
 	can_pick = {
-		religion_tag = selian_religion
+		religion_tag = nars_religion
 	}
 
 	character_modifier = {
@@ -151,10 +151,10 @@ tenet_nars_erudition = {
 	}
 
 	is_shown = {
-		religion_tag = selian_religion
+		religion_tag = nars_religion
 	}
 	can_pick = {
-		religion_tag = selian_religion
+		religion_tag = nars_religion
 	}
 
 	character_modifier = {
@@ -204,10 +204,10 @@ tenet_nars_sanguine = {
 	}
 
 	is_shown = {
-		religion_tag = selian_religion
+		religion_tag = nars_religion
 	}
 	can_pick = {
-		religion_tag = selian_religion
+		religion_tag = nars_religion
 	}
 
 	parameters = {
@@ -255,10 +255,10 @@ tenet_nars_artisans = {
 	icon = tenet_nars_0_rite #tenet_false_conversion_sanction
 
 	is_shown = {
-		religion_tag = selian_religion
+		religion_tag = nars_religion
 	}
 	can_pick = {
-		religion_tag = selian_religion
+		religion_tag = nars_religion
 	}
 
 	piety_cost = {
@@ -326,10 +326,10 @@ tenet_nars_warlike = {
 	divergence_multiplier = 0.95
 	
 	is_shown = {
-		religion_tag = selian_religion
+		religion_tag = nars_religion
 	}
 	can_pick = {
-		religion_tag = selian_religion
+		religion_tag = nars_religion
 	}
 
 	parameters = {
@@ -393,10 +393,10 @@ tenet_nars_crusade = {
 	divergence_multiplier = 0.95
 
 	is_shown = {
-		religion_tag = selian_religion
+		religion_tag = nars_religion
 	}
 	can_pick = {
-		religion_tag = selian_religion
+		religion_tag = nars_religion
 	}
 
 	piety_cost = {
@@ -453,10 +453,10 @@ tenet_nars_deviance = {
 	}
 
 	is_shown = {
-		religion_tag = selian_religion
+		religion_tag = nars_religion
 	}
 	can_pick = {
-		religion_tag = selian_religion
+		religion_tag = nars_religion
 	}
 
 	parameters = {

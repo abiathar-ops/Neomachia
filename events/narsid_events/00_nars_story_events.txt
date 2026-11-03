@@ -84,6 +84,7 @@ nars_intro.0001 = {
             trait = gregarious
             trait = education_diplomacy_5
             trait = nars_soter
+            trait = saint
             trait = nars_naturalis
             trait = beauty_good_3
             trait = physique_good_3
@@ -252,7 +253,7 @@ nars_intro.0001 = {
                 CONSECRATION_PROVINCE = scope:consecration_province
                 PRESET = no
             }
-            religion:selian_religion = {
+            religion:nars_religion = {
                 every_faith = {
                     limit = {
                         main_rite = { is_rite_enabled = yes }

@@ -517,3 +517,147 @@ decision_sponsor_meithios = {
 		base = 15
 	}
 }
+
+decision_patron_hero = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_legitimacy.dds"
+	}
+	decision_group_type = religious
+	sort_order = 100
+	desc = decision_patron_hero_desc
+	selection_tooltip = decision_patron_hero_tooltip
+
+	is_shown = {
+		# Nars specific
+		religion ?= religion:nars_religion
+		NOT = { has_variable = nars_chose_patron_hero_var }
+	}
+
+	is_valid_showing_failures_only = {
+		piety_level > 0
+		custom_tooltip = {
+			text = decision_patron_hero_dulia_tt
+			rite = {
+				has_at_least_tenet_status = {
+					tenet = tenet_dulia
+					status = permitted
+				}
+			}		
+		}
+		custom_tooltip = {
+			text = decision_patron_hero_personal_tenet_tt
+			has_personal_tenet_flag = tenet_dulia_can_select_patron_hero
+		}
+	}
+	
+	widget = {
+		gui = "decision_view_widget_option_list_generic"
+		controller = decision_option_list_controller
+		decision_to_second_step_button = "SELECT_ACTION"
+		show_from_start = yes
+
+		item = { # hero Peter
+			value = peter
+			localization = decision_patron_hero_alnars
+			icon = "gfx/interface/icons/artifact/artifact_rock.dds"
+			ai_chance = {
+				value = 100
+			}
+		}
+		item = { # hero Paul
+			value = paul
+			localization = decision_patron_hero_trunsoest
+			icon = "gfx/interface/icons/court_position_types/court_tutor_court_position.dds"
+			ai_chance = {
+				value = 100
+			}
+		}
+		item = { # hero John
+			value = john
+			localization = decision_patron_hero_moretius
+			icon = "gfx/interface/icons/court_position_types/cupbearer_court_position.dds"
+			ai_chance = {
+				value = 100
+			}
+		}
+		item = { # hero Matthew
+			value = matthew
+			localization = decision_patron_hero_matthew
+			icon = "gfx/interface/icons/court_position_types/bookmaker_court_position.dds"
+			ai_chance = {
+				value = 100
+			}
+		}
+		item = { # hero Mark
+			value = mark
+			localization = decision_patron_hero_mark
+			icon = "gfx/interface/icons/traits/knight_of_the_lion.dds"
+			ai_chance = {
+				value = 100
+			}
+		}
+		item = { # hero Luke
+			value = luke
+			localization = decision_patron_hero_luke
+			icon = "gfx/interface/icons/trait_level_tracks/lifestyle_physician.dds"
+			ai_chance = {
+				value = 100
+			}
+		}
+	}
+
+	effect = {
+		set_variable = nars_chose_patron_hero_var
+		if = {
+			limit = {
+				scope:peter = yes
+			}
+			add_character_modifier = nars_patron_hero_peter
+		}
+		else_if = {
+			limit = {
+				scope:paul = yes
+			}
+			add_character_modifier = nars_patron_hero_paul
+		}
+		else_if = {
+			limit = {
+				scope:john = yes
+			}
+			add_character_modifier = nars_patron_hero_john
+		}
+		else_if = {
+			limit = {
+				scope:matthew = yes
+			}
+			add_character_modifier = nars_patron_hero_matthew
+		}
+		else_if = {
+			limit = {
+				scope:mark = yes
+			}
+			add_character_modifier = nars_patron_hero_mark
+		}
+		else = {
+			add_character_modifier = nars_patron_hero_luke
+		}
+	}
+
+	ai_check_interval_by_tier = {
+		barony = 0
+		county = 96
+		duchy = 96
+		kingdom = 96
+		empire = 96
+		hegemony = 96
+	}
+
+	ai_potential = {
+		NOT = { has_variable = nars_chose_patron_hero_var }
+		piety_level > 1
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}

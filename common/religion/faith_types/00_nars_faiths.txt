@@ -2,7 +2,7 @@
 	main_rite = nars_1_rite
 
 	faith_details = {
-		religion = selian_religion
+		religion = nars_religion
 		color = { 230 228 216 }
 		icon = islam_tuareg_03 #islam_rub_el_hizb_knot_03 #custom_faith_dove
 	}

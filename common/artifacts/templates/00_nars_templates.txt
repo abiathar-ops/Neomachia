@@ -12,7 +12,7 @@
 		always = yes
 	}
 	is_holy_relic = {
-		religion = religion:selian_religion
+		religion = religion:nars_religion
 	}
 	fallback = {
 		prowess = 5
@@ -54,7 +54,7 @@ anduril_template = {
 		is_selian = yes
 	}
 	is_holy_relic = {
-		religion = religion:selian_religion
+		religion = religion:nars_religion
 	}
 	can_reforge = {
 		always = yes
@@ -84,7 +84,7 @@ ilyanil_template = {
 		always = yes
 	}
 	is_holy_relic = {
-		religion = religion:selian_religion
+		religion = religion:nars_religion
 	}
 	can_repair = {
 		always = yes

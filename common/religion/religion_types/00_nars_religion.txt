@@ -1,4 +1,4 @@
-﻿selian_religion = {
+﻿nars_religion = {
 	religion_details = {
 		family = rf_pagan
 		graphical_faith = "pagan_gfx"
@@ -40,9 +40,8 @@
 
 	doctrine = doctrine_scriptural 
 
-	#Allow pilgrimages
-	doctrine = doctrine_pilgrimage_local_rites
-
+	#Disallow pilgrimages
+	doctrine = doctrine_pilgrimage_forbidden
 	#Funeral tradition
 	doctrine = doctrine_funeral_sky_burial
 
@@ -264,9 +263,9 @@
 		DevilHerselfHimself = CHARACTER_HIMSELF
 		EvilGodNames = {
 			nars_devil_name
-			nars_evil_god_agares
-			nars_evil_god_vasago
-			nars_evil_god_samiga
+			nars_evil_god_ipate
+			nars_evil_god_loimos
+			nars_evil_god_oizys
 		}
 		HouseOfWorship = nars_house_of_worship
 		HouseOfWorship2 = nars_house_of_worship

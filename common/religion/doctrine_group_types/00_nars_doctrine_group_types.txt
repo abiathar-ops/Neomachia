@@ -3,7 +3,7 @@ nars_special = {
 	category = special
 
 	is_available_on_create = {
-		religion_tag = selian_religion
+		religion_tag = nars_religion
 	}
 }
 
@@ -12,6 +12,6 @@ nars_special_2 = {
 	category = special
 
 	is_available_on_create = {
-		religion_tag = selian_religion
+		religion_tag = nars_religion
 	}
 }

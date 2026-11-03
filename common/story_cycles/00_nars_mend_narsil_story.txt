@@ -1,6 +1,6 @@
 ﻿story_mend_narsil = {
     visible = yes
-    icon = { reference = "gfx/interface/icons/artifact/artefact_icons_unique_artifact_excalibur.dds" }
+    icon = { reference = "gfx/interface/icons/artifact/artifact_narsil.dds" }
     background = { reference = "gfx/interface/illustrations/event_scenes/nars_war.dds" }
 
     visualization = {

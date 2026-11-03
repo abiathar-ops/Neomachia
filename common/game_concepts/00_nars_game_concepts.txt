@@ -4,6 +4,11 @@
 	alias = { selian selianes selianes_adj selians_adj selian_adj}
 }
 
+heroized = {
+	texture = "gfx/interface/icons/icon_group_of_characters.dds"
+	alias = { heroized heroization hero heroes }
+}
+
 narsokratia = {
 	parent = selian
 	texture = "gfx/interface/icons/icon_banner.dds"
@@ -21,6 +26,21 @@ phokas = {
 }
 
 enuo = {
+	texture = "gfx/interface/icons/icon_battle_advantage.dds"
+	parent = politeion
+}
+
+metis = {
+	texture = "gfx/interface/icons/icon_battle_advantage.dds"
+	parent = politeion
+}
+
+peitho = {
+	texture = "gfx/interface/icons/icon_battle_advantage.dds"
+	parent = politeion
+}
+
+aristeus = {
 	texture = "gfx/interface/icons/icon_battle_advantage.dds"
 	parent = politeion
 }

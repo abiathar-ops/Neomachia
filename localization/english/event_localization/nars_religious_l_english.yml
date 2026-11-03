@@ -5,7 +5,7 @@
  nars_religious.10.b: "I will treat my faith with dignity."
  nars_religious.10.c: "It'll take the time it takes."
  no_change_pious_devotion_tt: "Your [GetScheme('piously_devote_scheme').GetTypeName] [scheme|E] progresses unmodified"
- nars_religious_intro_tt: "Sacred, mighty Gods, receive mine supplication!"
+ nars_religious_intro_tt: "Sacred, mighty gods, receive mine supplication!"
  nars_religious.0001.t:0 "Pious Reflection"
  nars_religious.0002.t:0 "Mystical Insights"
  nars_religious.0003.t:0 "Poetic Inspiration"
@@ -85,7 +85,7 @@
  nars_religious.3020.t:0 "Theoùs Sébou"
  nars_religious.3020.desc:0 "The air in the sanctuary is thick with myrrh, and my knees ache against the unyielding marble. I have poured the libations and spoken the sacred words, prayed, even begged for any of their signs with absolute, desperate devotion. Yet... nothing.\n\nThe statues stare back with unblinking, painted eyes. The flames on the altar do not dance; they barely flicker. There are no omens, no sudden gusts of wind, no warmth of divine presence. The gods are utterly silent, offering no sign of their favor. [priest.GetFirstNameNoTooltip] watches me from the corner of her eye, waiting to see how I bear this hapless crushing indifference.\n\n#flavor "The gods are hard for mortal men to see." - $alnars_anduril$#!"
  nars_religious.3020.a:0 "I will not rise until they hear me."
- nars_religious.3020.a.flavor:0 "For the Gods will see my perseverance and answer."
+ nars_religious.3020.a.flavor:0 "For the gods will see my perseverance and answer."
  nars_religious.3020.b:0 "This is a waste of breath..."
  nars_religious.3020.b.flavor:0 "I have mortal matters to attend to."
 

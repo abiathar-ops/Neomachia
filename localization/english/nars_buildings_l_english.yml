@@ -14,7 +14,7 @@
  building_constructing_cranes_01_desc: "Cranes are erected to build towering structures, while the clatter of gears and the hum of machinery fill the air. A new special building is being constructed.\n\n#flavor This will be completed in #color_green 6-12#! months!#!"
 
  building_type_aretaic_school_01: "School of Virtue"
- building_type_aretaic_school_01_desc: "A sprawling complex of schools, the $building_aretaic_school_01$ echoes with hushed voices of philosophers racing in unravelling the secrets of the cosmos.\n\n#flavor "Life is short, the art long, opportunity fleeting, experiment treacherous, judgment difficult." - $alnars_anduril$#!"
+ building_type_aretaic_school_01_desc: "A sprawling complex of schools, the $building_aretaic_school_01$ echoes with hushed voices of philosophers racing in unravelling the secrets of the cosmos.\n\n#flavor "Life is short, the art long, and records longer still." - $alnars_anduril$#!"
  building_aretaic_school_01: "Aretaiké Scholí"
  building_aretaic_school_01_desc: "$building_type_aretaic_school_01_desc$"
 

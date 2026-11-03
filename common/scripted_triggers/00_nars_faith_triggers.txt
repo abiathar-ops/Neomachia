@@ -1,14 +1,14 @@
 ﻿follows_selian_faith = {
 	custom_tooltip = {
 		text = follows_selian_faith_tt
-		faith = { religion_tag = selian_religion }
+		faith = { religion_tag = nars_religion }
 	}
 }
 
 is_selian_faith = {
-	religion_tag = selian_religion
+	religion_tag = nars_religion
 }
 
 is_selian_rite = {
-	rite_religion_tag = selian_religion
+	rite_religion_tag = nars_religion
 }
