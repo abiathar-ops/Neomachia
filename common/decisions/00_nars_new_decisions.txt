@@ -535,19 +535,19 @@ decision_patron_hero = {
 
 	is_valid_showing_failures_only = {
 		piety_level > 0
-		custom_tooltip = {
-			text = decision_patron_hero_dulia_tt
-			rite = {
-				has_at_least_tenet_status = {
-					tenet = tenet_dulia
-					status = permitted
-				}
-			}		
-		}
-		custom_tooltip = {
-			text = decision_patron_hero_personal_tenet_tt
-			has_personal_tenet_flag = tenet_dulia_can_select_patron_hero
-		}
+		# custom_tooltip = {
+		# 	text = decision_patron_hero_dulia_tt
+		# 	rite = {
+		# 		has_at_least_tenet_status = {
+		# 			tenet = tenet_dulia
+		# 			status = permitted
+		# 		}
+		# 	}		
+		# }
+		# custom_tooltip = {
+		# 	text = decision_patron_hero_personal_tenet_tt
+		# 	has_personal_tenet_flag = tenet_dulia_can_select_patron_hero
+		# }
 	}
 	
 	widget = {
@@ -556,50 +556,34 @@ decision_patron_hero = {
 		decision_to_second_step_button = "SELECT_ACTION"
 		show_from_start = yes
 
-		item = { # hero Peter
-			value = peter
+		item = { # hero Alnars (Learning/Faith)
+			value = alnars
 			localization = decision_patron_hero_alnars
 			icon = "gfx/interface/icons/artifact/artifact_rock.dds"
 			ai_chance = {
 				value = 100
 			}
 		}
-		item = { # hero Paul
-			value = paul
-			localization = decision_patron_hero_trunsoest
+		item = { # hero Eúmelos (Stewardship/Culture)
+			value = eumelos
+			localization = decision_patron_hero_eumelos
 			icon = "gfx/interface/icons/court_position_types/court_tutor_court_position.dds"
 			ai_chance = {
 				value = 100
 			}
 		}
-		item = { # hero John
-			value = john
-			localization = decision_patron_hero_moretius
+		item = { # hero Orkheús (Intrigue/Scheme)
+			value = orkheus
+			localization = decision_patron_hero_orkheus
 			icon = "gfx/interface/icons/court_position_types/cupbearer_court_position.dds"
 			ai_chance = {
 				value = 100
 			}
 		}
-		item = { # hero Matthew
-			value = matthew
-			localization = decision_patron_hero_matthew
+		item = { # hero Sténelos (Martial/Prowess)
+			value = stenalos
+			localization = decision_patron_hero_stenalos
 			icon = "gfx/interface/icons/court_position_types/bookmaker_court_position.dds"
-			ai_chance = {
-				value = 100
-			}
-		}
-		item = { # hero Mark
-			value = mark
-			localization = decision_patron_hero_mark
-			icon = "gfx/interface/icons/traits/knight_of_the_lion.dds"
-			ai_chance = {
-				value = 100
-			}
-		}
-		item = { # hero Luke
-			value = luke
-			localization = decision_patron_hero_luke
-			icon = "gfx/interface/icons/trait_level_tracks/lifestyle_physician.dds"
 			ai_chance = {
 				value = 100
 			}
@@ -610,36 +594,24 @@ decision_patron_hero = {
 		set_variable = nars_chose_patron_hero_var
 		if = {
 			limit = {
-				scope:peter = yes
+				scope:alnars = yes
 			}
-			add_character_modifier = nars_patron_hero_peter
+			add_character_modifier = nars_patron_hero_alnars
 		}
 		else_if = {
 			limit = {
-				scope:paul = yes
+				scope:eumelos = yes
 			}
-			add_character_modifier = nars_patron_hero_paul
+			add_character_modifier = nars_patron_hero_eumelos
 		}
 		else_if = {
 			limit = {
-				scope:john = yes
+				scope:orkheus = yes
 			}
-			add_character_modifier = nars_patron_hero_john
-		}
-		else_if = {
-			limit = {
-				scope:matthew = yes
-			}
-			add_character_modifier = nars_patron_hero_matthew
-		}
-		else_if = {
-			limit = {
-				scope:mark = yes
-			}
-			add_character_modifier = nars_patron_hero_mark
+			add_character_modifier = nars_patron_hero_orkheus
 		}
 		else = {
-			add_character_modifier = nars_patron_hero_luke
+			add_character_modifier = nars_patron_hero_stenalos
 		}
 	}
 
