@@ -27,18 +27,22 @@
  nars_2_rite_adherent_plural: "Ísoi"
  nars_2_rite_desc: "Forged in the harshness of Misthophóroi life, $nars_2_rite$ is a militaristic rite filled with warmongers. Adherents believe that the future for $game_concept_selians$ cannot be found in traditions and must be secured through arms as they adapt to more wars."
 
+ nars_narses_name:0 "$game_concept_narses$"
+ nars_narses_name_possessive:0 "$game_concept_narses$'"
+ nars_phokas_name:0 "$game_concept_phokas$"
+ nars_phokas_name_possessive:0 "$game_concept_phokas$'"
+ nars_enuo_name:0 "$game_concept_enuo$"
+ nars_enuo_name_possessive:0 "$game_concept_enuo$'"
+ nars_stiano_name:0 "$game_concept_stiano$"
+ nars_stiano_name_possessive:0 "$game_concept_stiano$'"
+ nars_yheros_name:0 "$game_concept_yheros$"
+ nars_yheros_name_possessive:0 "$game_concept_yheros$'"
+
  # Gods and Flavorization
  nars_high_god_name:0 "Narsés"
  nars_high_god_name_possessive:0 "Narsés'"
  nars_high_god_name_alternate:0 "Phōkás"
  nars_high_god_name_alternate_possessive:0 "Phōkás'"
-
- nars_metis_name:0 "$game_concept_stiano$"
- nars_metis_name_possessive:0 "$game_concept_stiano$'"
- nars_peitho_name:0 "$game_concept_yheros$"
- nars_peitho_name_possessive:0 "$game_concept_yheros$'"
- nars_enuo_name:0 "$game_concept_enuo$"
- nars_enuo_name_possessive:0 "$game_concept_enuo$'"
 
  # Devil and evil gods
  nars_devil_name:0 "Alástōr"
@@ -78,14 +82,14 @@
  nars_negative_afterlife_3:0 "$nars_negative_afterlife$" # Optional translation alt
 
  # God slots (religion_types localization block)
- nars_witch_god_name:0 "$nars_metis_name$"
- nars_witch_god_name_possessive:0 "$nars_metis_name_possessive$"
- nars_trickster_god_name:0 "$nars_metis_name$"
- nars_trickster_god_name_possessive:0 "$nars_metis_name_possessive$"
- nars_health_god_name:0 "$nars_peitho_name$"
- nars_health_god_name_possessive:0 "$nars_peitho_name_possessive$"
- nars_household_god_name:0 "$nars_peitho_name$"
- nars_household_god_name_possessive:0 "$nars_peitho_name_possessive$"
+ nars_witch_god_name:0 "$nars_stiano_name$"
+ nars_witch_god_name_possessive:0 "$nars_stiano_name_possessive$"
+ nars_trickster_god_name:0 "$nars_stiano_name$"
+ nars_trickster_god_name_possessive:0 "$nars_stiano_name_possessive$"
+ nars_health_god_name:0 "$nars_yheros_name$"
+ nars_health_god_name_possessive:0 "$nars_yheros_name_possessive$"
+ nars_household_god_name:0 "$nars_yheros_name$"
+ nars_household_god_name_possessive:0 "$nars_yheros_name_possessive$"
  nars_night_god_name:0 "$nars_enuo_name$"
  nars_night_god_name_possessive:0 "$nars_enuo_name_possessive$"
  nars_creator_god_name:0 "$nars_high_god_name$"

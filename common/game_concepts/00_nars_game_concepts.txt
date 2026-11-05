@@ -15,6 +15,12 @@ narsokratia = {
 	alias = { selianrealm narsokratia_possessive }
 }
 
+alva = {
+	alias = { alva_term }
+	texture = "gfx/interface/icons/icon_battle_advantage.dds"
+	parent = politeion
+}
+
 narses = {
 	texture = "gfx/interface/icons/icon_battle_advantage.dds"
 	parent = politeion
@@ -30,17 +36,12 @@ enuo = {
 	parent = politeion
 }
 
-metis = {
+stiano = {
 	texture = "gfx/interface/icons/icon_battle_advantage.dds"
 	parent = politeion
 }
 
-peitho = {
-	texture = "gfx/interface/icons/icon_battle_advantage.dds"
-	parent = politeion
-}
-
-aristeus = {
+yheros = {
 	texture = "gfx/interface/icons/icon_battle_advantage.dds"
 	parent = politeion
 }
@@ -73,6 +74,24 @@ alnars = {
 	parent = selian
 	texture = "gfx/interface/icons/icon_character.dds"
 	alias = { alnars_possessive }
+}
+
+eumelos = {
+	parent = selian
+	texture = "gfx/interface/icons/icon_character.dds"
+	alias = { eumelos_possessive }
+}
+
+orkheus = {
+	parent = selian
+	texture = "gfx/interface/icons/icon_character.dds"
+	alias = { orkheus_possessive }
+}
+
+stenalos = {
+	parent = selian
+	texture = "gfx/interface/icons/icon_character.dds"
+	alias = { stenalos_possessive }
 }
 
 eleios = {

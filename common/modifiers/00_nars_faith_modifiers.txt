@@ -18,3 +18,30 @@ politeion_selian_enuo = { # Goddess of War, Strength, and Protection
 	years_of_fertility = 6
 	fertility = 0.18
 }
+
+nars_patron_hero_alnars = { # Learning / Faith - same as Narsés
+	icon = learning_positive
+	monthly_lifestyle_xp_gain_mult = 0.12
+	cultural_head_fascination_mult = 0.04
+}
+
+nars_patron_hero_eumelos = { # Stewardship / Culture - same as Phōkás
+	icon = stewardship_positive
+	character_travel_speed_mult = 0.135
+	stress_gain_mult = -0.18
+	domain_tax_mult = 0.09
+}
+
+nars_patron_hero_orkheus = { # Intrigue / Scheme - no politeion counterpart (Mêtis), new
+	icon = intrigue_positive
+	intrigue_per_piety_level = 1
+	owned_personal_scheme_success_chance_add = 10
+	enemy_hostile_scheme_success_chance_add = -10
+}
+
+nars_patron_hero_stenalos = { # Martial / Prowess - same as Enuō
+	icon = prowess_positive
+	prowess_per_piety_level = 2
+	years_of_fertility = 6
+	fertility = 0.18
+}
