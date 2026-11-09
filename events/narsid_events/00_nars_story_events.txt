@@ -32,29 +32,24 @@ nars_intro.1001 = {
 #Eleios, Ilione, and Strato
 nars_intro.0001 = {
     type = character_event
-    window = big_event_window
     title = nars_intro.0001.t
     desc = nars_intro.0001.desc
-    theme = nars_faith
+    theme = nars_political
 
+    override_background = wilderness_mountains
+    widget = { gui = event_window_widget_vfx_fog container = foreground_shader_vfx_container }
     override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_ui_intro_animate" }
 
     left_portrait = {
         character = scope:eleios
         animation = disapproval
-        camera = camera_event_right
-    }
-
-    center_portrait = {
-        character = scope:ilione
-        animation = throne_room_two_handed_passive_1
-        camera = camera_event_center
+        camera = camera_event_left
     }
 
     right_portrait = {
-        character = scope:strato
+        character = scope:ilione
         animation = war_over_win
-        camera = camera_event_center_pointing_forward
+        camera = camera_event_right
     }
 
     immediate = {
@@ -439,85 +434,13 @@ nars_intro.0001 = {
             }
 
             scope:strato = {
-                save_scope_as = new_landless_adventurer
-                create_adventurer_title = {
-                    name = d_laamp_nars_0003
-                    article = DEFAULT_TITLE_NAME_ARTICLE
-                    holder = scope:new_landless_adventurer
-                    save_scope_as = new_title
-                }
-                save_scope_value_as = {
-                    name = adventurer_creation_reason
-                    value = flag:voluntary
-                }
-                
+                set_employer = scope:ilione
+
                 add_gold = { 705 1000 }
                 add_prestige = { 705 1000 }
                 add_prestige_level = 2
                 add_piety_level = 1
 
-                while = {
-                    count = 2
-                    trigger_event = nars_courtiers.9000
-                }
-                
-                create_title_and_vassal_change = {
-                    type = created
-                    save_scope_as = change
-                    add_claim_on_loss = no
-                }
-                scope:new_title ?= {
-                    create_landless_adventurer_title_history_effect = yes
-                    set_variable = {
-                        name = adventurer_creation_reason
-                        value = scope:adventurer_creation_reason
-                    }
-                    change_title_holder = {
-                        holder = scope:new_landless_adventurer
-                        change = scope:change
-                    }
-                    set_title_name = d_laamp_nars_0003
-                    add_title_law = landless_adventurer_succession_law 
-                }
-                resolve_title_and_vassal_change = scope:change
-                scope:new_title = { save_scope_as = new_landless_adventurer_title }
-                
-                scope:new_landless_adventurer = {
-                    if = {
-                        limit = { NOT = { has_government = landless_adventurer_government } }
-                        change_government = landless_adventurer_government
-                    }
-                    if = {
-                        limit = { NOT = { has_realm_law = landless_adventurer_succession_law } }
-                        add_realm_law_skip_effects = landless_adventurer_succession_law
-                    }
-                    if = {
-                        limit = { has_realm_law = crown_authority_0 }
-                        remove_realm_law = crown_authority_0
-                    }
-                    add_realm_law_skip_effects = camp_purpose_mercenaries
-                    nars_naturalis_set_tier_xp_effect = yes
-                    
-                    domicile = { 
-                        nars_laamp_camp_setup_effect = yes
-                        change_provisions = starting_provisions_value 
-                    }
-                }      
-                populate_location_with_contracts_effect = { AREA_CHAR = scope:new_landless_adventurer AMOUNT = 5 }                          
-                spawn_army = {
-                    name = event_troop_default_name
-                    levies = 975
-                    men_at_arms = { type = nars_t1 stacks = 12 }
-                    men_at_arms = { type = mangonel stacks = 6 }
-                    men_at_arms = { type = mangonel stacks = 6 }
-                    location = root.location
-                    uses_supply = yes
-                    inheritable = yes
-                }
-                trigger_event = { 
-                    id = nars_intro.0002
-                    days = 2
-                }
                 intro_standard_effect = yes
             }
         }
@@ -531,9 +454,6 @@ nars_intro.0001 = {
         scope:ilione = {
             save_scope_as = target_1
         }
-        scope:strato = {
-            save_scope_as = target_2
-        }
         ai_chance = { base = 0 }   
     }
     
@@ -545,23 +465,6 @@ nars_intro.0001 = {
         scope:eleios = {
             save_scope_as = target_1
         }
-        scope:strato = {
-            save_scope_as = target_2
-        }
-        ai_chance = { base = 0 }   
-    }
-    
-    option = {
-        name = nars_intro.0001.c
-        flavor = nars_intro.0001.c.flavor
-        add_internal_flag = dangerous
-        set_player_character = scope:strato
-        scope:eleios = {
-            save_scope_as = target_1
-        }
-        scope:ilione = {
-            save_scope_as = target_2
-        }
         ai_chance = { base = 0 }   
     }
     
@@ -571,16 +474,17 @@ nars_intro.0001 = {
         custom_tooltip = selian_incivility.tt
         ai_chance = { base = 100 }   
     }
-
-    after = {
-        override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_start_select" }
-    }
 }
 
 nars_intro.0002 = { 
     type = character_event
     title = nars_intro.0002.t
+    theme = nars_political
     
+    override_background = wilderness_mountains
+    widget = { gui = event_window_widget_vfx_fog container = foreground_shader_vfx_container }
+    override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_ui_intro_animate" }
+
     desc = {
         desc = nars_intro.0002.desc        
         first_valid = {
@@ -590,19 +494,10 @@ nars_intro.0002 = {
                 }
                 desc = nars_intro.0002.eleios
             }
-            triggered_desc = {
-                trigger = {
-                    has_character_modifier = ilione_modifier
-                }
-                desc = nars_intro.0002.ilione
-            }
-            desc = nars_intro.0002.strato
+            desc = nars_intro.0002.ilione     
         }
         desc = nars_intro.0002.end
     }
-
-    window = big_event_window
-    theme = nars_faith
     
     left_portrait = {
         character = root
@@ -614,11 +509,9 @@ nars_intro.0002 = {
         animation = throne_room_messenger_3
         camera = camera_event_right
     }
-    lower_center_portrait = {
-        character = scope:target_1
-    }
     lower_right_portrait = {
-        character = scope:target_2
+        character = scope:target_1
+        animation = marshal
     }
     
     immediate = { 
@@ -627,19 +520,18 @@ nars_intro.0002 = {
             save_scope_as = alnars
         }
         random_sibling = {
-            save_scope_as = target_1
-        }
-        random_sibling = {
             limit = {
-                NOT = { this = scope:target_1 }
+                OR = {
+                    has_character_modifier = eleios_modifier
+                    has_character_modifier = ilione_modifier
+                }
             }
-            save_scope_as = target_2
+            save_scope_as = target_1
         }
         random_courtier = {
             limit = {
                 is_adult = yes
                 NOT = { this = scope:target_1 }
-                NOT = { this = scope:target_2 }
             }
             add_character_flag = need_military_outfit
             save_scope_as = diplomat

@@ -14,14 +14,9 @@ narsil_shards = {
 }
 
 anduril = {
-	slot = regalia
-	required_features = {
-		regalia_scepter regalia_clothes regalia_accessory
-		decoration_material_wire 
-		decoration_material_gem 
-		generic_material_cloth
-		decoration_material_embroidery
-	}
+	slot = journal
+	can_reforge = no
+	optional_features = { book_topic book_title book_decoration decoration_pattern generic_material_wood decoration_material_gem decoration_material_inlay_HSB }
 }
 
 amphora = {

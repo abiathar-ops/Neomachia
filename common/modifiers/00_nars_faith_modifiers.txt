@@ -39,7 +39,7 @@ nars_patron_hero_orkheus = { # Intrigue / Scheme - no politeion counterpart (Mê
 	enemy_hostile_scheme_success_chance_add = -10
 }
 
-nars_patron_hero_stenalos = { # Martial / Prowess - same as Enuō
+nars_patron_hero_stelanos = { # Martial / Prowess - same as Enuō
 	icon = prowess_positive
 	prowess_per_piety_level = 2
 	years_of_fertility = 6

@@ -580,9 +580,9 @@ decision_patron_hero = {
 				value = 100
 			}
 		}
-		item = { # hero Sténalos (Martial/Prowess) - Enuō
-			value = stenalos
-			localization = decision_patron_hero_stenalos
+		item = { # hero Stélanos (Martial/Prowess) - Enuō
+			value = stelanos
+			localization = decision_patron_hero_stelanos
 			icon = "gfx/interface/icons/court_position_types/court_astrologer_court_position.dds"
 			ai_chance = {
 				value = 100
@@ -633,9 +633,9 @@ decision_patron_hero = {
 				text = permanent_decision_tt
 			}
 			custom_tooltip = {
-				text = decision_patron_hero_stenalos_tt
+				text = decision_patron_hero_stelanos_tt
 			}
-			add_character_modifier = nars_patron_hero_stenalos
+			add_character_modifier = nars_patron_hero_stelanos
 		}
 	}
 

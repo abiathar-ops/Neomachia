@@ -41,11 +41,6 @@ stiano = {
 	parent = politeion
 }
 
-yheros = {
-	texture = "gfx/interface/icons/icon_battle_advantage.dds"
-	parent = politeion
-}
-
 politeion = {
 	texture = "gfx/interface/icons/icon_battle_advantage.dds"
 	alias = { politeion_possessive }
@@ -88,10 +83,10 @@ orkheus = {
 	alias = { orkheus_possessive }
 }
 
-stenalos = {
+stelanos = {
 	parent = selian
 	texture = "gfx/interface/icons/icon_character.dds"
-	alias = { stenalos_possessive }
+	alias = { stelanos_possessive }
 }
 
 eleios = {

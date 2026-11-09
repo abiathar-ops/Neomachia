@@ -142,43 +142,33 @@ selian_diplomacy_entreaty_effect = {
     custom_tooltip = selian_diplomacy.tt
     
     hidden_effect = {
-        # Dynamically identify the other two siblings based on the root character's modifier
+        # Dynamically identify the remaining sibling based on the root character's modifier
         if = {
             limit = { has_character_modifier = eleios_modifier }
             father = {
                 random_child = { limit = { has_character_modifier = ilione_modifier } save_scope_as = target_1 }
-                random_child = { limit = { has_character_modifier = strato_modifier } save_scope_as = target_2 }
             }
         }
         else_if = {
             limit = { has_character_modifier = ilione_modifier }
             father = {
                 random_child = { limit = { has_character_modifier = eleios_modifier } save_scope_as = target_1 }
-                random_child = { limit = { has_character_modifier = strato_modifier } save_scope_as = target_2 }
-            }
-        }
-        else_if = {
-            limit = { has_character_modifier = strato_modifier }
-            father = {
-                random_child = { limit = { has_character_modifier = eleios_modifier } save_scope_as = target_1 }
-                random_child = { limit = { has_character_modifier = ilione_modifier } save_scope_as = target_2 }
             }
         }
         
         random_list = {
-            20 = {
+            # Success: Target 1 joins your court along with their followers
+            50 = {
                 modifier = {
-                    add = 10
-                    scope:target_1 = { opinion: { target = root value >= 50 } }
-                    scope:target_2 = { opinion: { target = root value >= 50 } }
+                    add = 25
+                    scope:target_1 = { opinion = { target = root value >= 50 } }
                 }
                 
                 send_interface_message = {
-                    title = selian_diplomacy_both_join_toast_t
-                    desc = selian_diplomacy_both_join_toast_tt
+                    title = selian_diplomacy_joins_toast_t
+                    desc = selian_diplomacy_joins_toast_tt
                     type = event_diplomacy_good_with_text
                     left_icon = scope:target_1
-                    right_icon = scope:target_2
                 }
                 
                 scope:target_1 = {
@@ -201,134 +191,26 @@ selian_diplomacy_entreaty_effect = {
                         }
                     }
                 }
-                
-                scope:target_2 = {
-                    hidden_effect = { laamp_clear_domicile_buildings_liquidator_effect = yes }
-                    every_courtier = { add_to_list = target_2_followers_list }
-                    destroy_laamp_effect = { ADVENTURER = this }
-                    remove_trait = adventurer
-                    
-                    root = { 
-                        add_courtier = scope:target_2 
-                        return_to_court = yes 
-                    }
-                    
-                    hidden_effect = {
-                        every_in_list = {
-                            list = target_2_followers_list
-                            limit = { NOT = { liege_or_court_owner = root } }
-                            root = { add_courtier = prev }
-                            remove_trait = adventurer_follower
-                        }
-                    }
-                }
             }
-            25 = {
+            
+            # Failure: Target 1 refuses, gains disapproving opinion, and becomes a rival
+            50 = {
                 send_interface_message = {
-                    title = selian_diplomacy_half_joins_toast_t
-                    type = event_diplomacy_good_with_text
-                    left_icon = scope:target_1
-                    right_icon = scope:target_2
-                    desc = selian_diplomacy_target_1_joins_toast_tt
-                }
-                scope:target_1 = {
-                    hidden_effect = { laamp_clear_domicile_buildings_liquidator_effect = yes }
-                    every_courtier = { add_to_list = target_1_followers_list }
-                    destroy_laamp_effect = { ADVENTURER = this }
-                    remove_trait = adventurer
-                    
-                    root = { 
-                        add_courtier = scope:target_1 
-                        return_to_court = yes 
-                    }
-                    
-                    hidden_effect = {
-                        every_in_list = {
-                            list = target_1_followers_list
-                            limit = { NOT = { liege_or_court_owner = root } }
-                            root = { add_courtier = prev }
-                            remove_trait = adventurer_follower
-                        }
-                    }
-                }
-                scope:target_2 = {
-                    add_opinion = {
-                        target = root
-                        modifier = disapproving_opinion
-                    }
-                    set_relation_rival = {
-                        reason = rival_claimant_fight
-                        target = root
-                    } 
-                }
-            }
-            25 = {
-                send_interface_message = {
-                    title = selian_diplomacy_half_joins_toast_t
-                    type = event_diplomacy_good_with_text
-                    left_icon = scope:target_1
-                    right_icon = scope:target_2
-                    desc = selian_diplomacy_target_2_joins_toast_tt
-                }
-
-                scope:target_1 = {
-                    add_opinion = {
-                        target = root
-                        modifier = disapproving_opinion
-                    }
-                    set_relation_rival = {
-                        reason = rival_claimant_fight
-                        target = root
-                    } 
-                }
-                scope:target_2 = {
-                    hidden_effect = { laamp_clear_domicile_buildings_liquidator_effect = yes }
-                    every_courtier = { add_to_list = target_2_followers_list }
-                    destroy_laamp_effect = { ADVENTURER = this }
-                    remove_trait = adventurer
-                    
-                    root = { 
-                        add_courtier = scope:target_2 
-                        return_to_court = yes 
-                    }
-                    
-                    hidden_effect = {
-                        every_in_list = {
-                            list = target_2_followers_list
-                            limit = { NOT = { liege_or_court_owner = root } }
-                            root = { add_courtier = prev }
-                            remove_trait = adventurer_follower
-                        }
-                    }
-                }
-            }
-            30 = {
-                send_interface_message = {
-                    title = selian_diplomacy_neither_join_toast_t
+                    title = selian_diplomacy_refuses_toast_t
                     type = event_diplomacy_bad_with_text
                     left_icon = scope:target_1
-                    right_icon = scope:target_2
-                    desc = selian_diplomacy_neither_join_toast_tt
+                    desc = selian_diplomacy_refuses_toast_tt
                 }
+                
                 scope:target_1 = {
                     add_opinion = {
                         target = root
                         modifier = disapproving_opinion
-                        set_relation_rival = {
-                            reason = rival_claimant_fight
-                            target = root
-                        } 
                     }
-                }
-                scope:target_2 = {
-                    add_opinion = {
+                    set_relation_rival = {
+                        reason = rival_claimant_fight
                         target = root
-                        modifier = disapproving_opinion
-                        set_relation_rival = {
-                            reason = rival_claimant_fight
-                            target = root
-                        } 
-                    }
+                    } 
                 }
             }
         }
