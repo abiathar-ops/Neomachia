@@ -99,3 +99,276 @@ ilyanil_template = {
 
 	unique = yes
 }
+
+
+# Holy relics of the Politeion: modelled on narsil_template / ilyanil_template. Not reforgeable, so reforging cannot strip the relic modifiers.
+
+aidokyne_template = {
+	can_equip = {
+		always = yes
+	}
+	can_benefit = {
+		is_selian = yes
+	}
+	can_reforge = {
+		always = no
+	}
+	is_holy_relic = {
+		religion = religion:nars_religion
+	}
+	can_repair = {
+		always = yes
+	}
+	fallback = {
+		prowess = 3
+		dread_baseline_add = 3
+	}
+	ai_score = {
+		value = 150
+	}
+
+	unique = yes
+}
+
+athanaton_template = {
+	can_equip = {
+		always = yes
+	}
+	can_benefit = {
+		is_selian = yes
+	}
+	can_reforge = {
+		always = no
+	}
+	is_holy_relic = {
+		religion = religion:nars_religion
+	}
+	can_repair = {
+		always = yes
+	}
+	fallback = {
+		prowess = 2
+		health = 0.25
+	}
+	ai_score = {
+		value = 150
+	}
+
+	unique = yes
+}
+
+wanaktika_template = {
+	can_equip = {
+		always = yes
+	}
+	can_benefit = {
+		is_selian = yes
+	}
+	can_reforge = {
+		always = no
+	}
+	is_holy_relic = {
+		religion = religion:nars_religion
+	}
+	can_repair = {
+		always = yes
+	}
+	fallback = {
+		court_grandeur_baseline_add = 3
+		monthly_prestige = 0.25
+	}
+	ai_score = {
+		value = 150
+	}
+
+	unique = yes
+}
+
+peithous_perone_template = {
+	can_equip = {
+		always = yes
+	}
+	can_benefit = {
+		is_selian = yes
+	}
+	can_reforge = {
+		always = no
+	}
+	is_holy_relic = {
+		religion = religion:nars_religion
+	}
+	can_repair = {
+		always = yes
+	}
+	fallback = {
+		diplomacy = 3
+		general_opinion = 2
+	}
+	ai_score = {
+		value = 150
+	}
+
+	unique = yes
+}
+
+metidos_daktylios_template = {
+	can_equip = {
+		always = yes
+	}
+	can_benefit = {
+		is_selian = yes
+	}
+	can_reforge = {
+		always = no
+	}
+	is_holy_relic = {
+		religion = religion:nars_religion
+	}
+	can_repair = {
+		always = yes
+	}
+	fallback = {
+		intrigue = 3
+		owned_hostile_scheme_success_chance_add = 5
+	}
+	ai_score = {
+		value = 150
+	}
+
+	unique = yes
+}
+
+phokados_hormos_template = {
+	can_equip = {
+		always = yes
+	}
+	can_benefit = {
+		is_selian = yes
+	}
+	can_reforge = {
+		always = no
+	}
+	is_holy_relic = {
+		religion = religion:nars_religion
+	}
+	can_repair = {
+		always = yes
+	}
+	fallback = {
+		stewardship = 3
+		monthly_income_mult = 0.03
+	}
+	ai_score = {
+		value = 150
+	}
+
+	unique = yes
+}
+
+dolos_template = {
+	can_equip = {
+		always = yes
+	}
+	can_benefit = {
+		is_selian = yes
+	}
+	can_reforge = {
+		always = no
+	}
+	is_holy_relic = {
+		religion = religion:nars_religion
+	}
+	can_repair = {
+		always = yes
+	}
+	fallback = {
+		intrigue = 3
+		owned_scheme_secrecy_add = 3
+	}
+	ai_score = {
+		value = 150
+	}
+
+	unique = yes
+}
+
+pelekys_stenalou_template = {
+	can_equip = {
+		always = yes
+	}
+	can_benefit = {
+		is_selian = yes
+	}
+	can_reforge = {
+		always = no
+	}
+	is_holy_relic = {
+		religion = religion:nars_religion
+	}
+	can_repair = {
+		always = yes
+	}
+	fallback = {
+		prowess = 3
+		monthly_piety = 0.1
+	}
+	ai_score = {
+		value = 150
+	}
+
+	unique = yes
+}
+
+narsokratia_throne_template = {
+	can_equip = {
+		always = yes
+	}
+	can_benefit = {
+		is_selian = yes
+	}
+	can_reforge = {
+		always = no
+	}
+	is_holy_relic = {
+		religion = religion:nars_religion
+	}
+	can_repair = {
+		always = yes
+	}
+	fallback = {
+		court_grandeur_baseline_add = 3
+		monthly_prestige = 0.25
+	}
+	ai_score = {
+		value = 150
+	}
+
+	unique = yes
+}
+
+aspis_alnars_template = {
+	can_equip = {
+		always = yes
+	}
+	can_benefit = {
+		is_selian = yes
+	}
+	can_reforge = {
+		always = no
+	}
+	is_holy_relic = {
+		religion = religion:nars_religion
+	}
+	can_repair = {
+		always = yes
+	}
+	fallback = {
+		court_grandeur_baseline_add = 2
+		dynasty_opinion = 3
+	}
+	ai_score = {
+		value = 150
+	}
+
+	unique = yes
+}

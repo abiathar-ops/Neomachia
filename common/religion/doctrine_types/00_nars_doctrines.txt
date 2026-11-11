@@ -33,6 +33,7 @@ nars_special_doctrine = {
 
 	parameters = {
 		divine_destiny_holy_war_cost_reduction
+		enable_patron_hero
 	}
 
 	faith_character_modifier = {

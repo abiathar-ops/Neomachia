@@ -81,10 +81,105 @@ dynn_naresios ={
 	}
 }
 
-house_nars_1001 = dynn_naresios
-dyn_nars_1001 = dynn_naresios
-d_laamp_nars_0001 = dynn_naresios
-d_laamp_nars_0002 = dynn_naresios
-d_laamp_nars_0003 = dynn_naresios
+d_laamp_nars_0001={
+	custom=yes
+	pattern="pattern_solid.dds"
+	color1=white
+	color2=white
+	color3=black
+	colored_emblem={
+		color1=black
+		texture="ce_arabic_basmala_kufic.dds"
+		instance={
+			scale={ -0.700000 -0.700000 }
+		}
 
+	}
 
+}
+
+d_laamp_nars_0002={
+	pattern="pattern_tricolor_bend_02.dds"
+	color1=white
+	color2=white
+	color3=white
+	colored_emblem={
+		color1=white
+		texture="ce_block_02.dds"
+		instance={
+			position={ 0.500000 1.000000 }
+			scale={ 1.000000 0.150000 }
+			depth=2.010000
+		}
+
+		instance={
+			position={ 0.000000 0.500000 }
+			scale={ 0.150000 1.000000 }
+			depth=3.010000
+		}
+
+		instance={
+			position={ 1.000000 0.500000 }
+			scale={ 0.150000 1.000000 }
+			depth=4.010000
+		}
+
+		instance={
+			position={ 0.500000 0.000000 }
+			scale={ 1.000000 -0.150000 }
+			depth=5.010000
+		}
+
+		instance={
+			depth=8.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=black
+		color2=black
+		color3=white
+		texture="ce_tiger.dds"
+		instance={
+			position={ 0.850000 0.745000 }
+			scale={ 1.500000 1.500000 }
+			depth=7.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=white
+		texture="ce_border_circle.dds"
+		instance={
+			position={ 0.500000 0.480000 }
+			scale={ 0.900000 0.900000 }
+			depth=6.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=white
+		texture="ce_circle_mask.dds"
+		instance={
+			position={ 0.890000 0.405000 }
+			scale={ 0.250000 0.250000 }
+			depth=1.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=black
+		color2=black
+		texture="ce_sabre.dds"
+		instance={
+			position={ 0.500000 0.200000 }
+			scale={ 0.750000 -0.750000 }
+		}
+
+	}
+
+}

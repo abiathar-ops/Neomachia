@@ -13,7 +13,7 @@
 
   tenet_nars_endgame_name:0 "Restoration"
   tenet_nars_endgame_no_actor:0 "Katástasis"
-  tenet_nars_endgame_desc:0 "The long exile ends, and the lost return to the seat of their ancient dominion, as the cycle always foretold."
+  tenet_nars_endgame_desc:0 "The long exile ends, and the lost return to the seat of their ancient dominion, as the cycle always foretold.\n\n[Glossary('Eugéneian áskei, kakías apékhou.', 'NARS_0_RITE_GLOSS')]"
 
   tenet_nars_artisans_name:0 "Blessed Artisans"
   tenet_nars_artisans_no_actor:0 "Dēmiourgía"
@@ -48,3 +48,4 @@
  doctrine_parameter_enable_piously_devote:0 "Unlocks the #v $decision_piously_devote$#! [decision|E]"
  doctrine_parameter_enable_selian_duchy_conversion:0 "Unlocks the #V Enforce $game_concept_selianes$#! [decision|E] per #color_green 25#! years"
  narsokratia_must_be_faithfully_restored_global_not:0 "[narsokratia|E] must be faithfully restored"
+ doctrine_parameter_enable_patron_hero:0 "Unlocks the #v $decision_patron_hero$#! [decision|E]"

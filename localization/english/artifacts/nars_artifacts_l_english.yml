@@ -1,15 +1,47 @@
 ﻿l_english:
  narsil_name:0 "Narsíl"
  narsil_desc:0 "[narsil|E] is an heirloom longsword from antiquity. Shattered long ago and now mended, its sharp mythical edge rallies the $game_concept_selianes$ to your cause."
+
  narsil_shards_name:0 "Shards of Narsíl"
  narsil_shards_desc:0 "These shards are the remains of a once-lauded longsword from antiquity. Passed down among the $game_concept_selianes$, it awaits to be mended into [narsil|E].
+
  artifact_anduril: "Holy Scrolls"
  artifact_narsil_shards: "Shards"
  artifact_narsil: "Mythical Item"
+
  anduril_name:0 "Onduríl"
  anduril_desc:0 "[anduril|E] is an unusually long yet durable scroll containing what seems to be a detailed records alongside selected works of the first '$nick_soter$', [alnars|E]."
  anduril_tooltip:0 "You gain an [artifact|E], an aging scroll of wisdom. This heirloom provides significant [character|E] bonuses."
+
  artifact_amphora_name: "Amphora"
  artifact_amphora_description: "A personally made [Glossary( 'Amphoreús', 'AMPHOREUS_GLOSS' )] of [SCOPE.Custom('ArtifactQuality')] craftsmanship. It is made of [newly_created_artifact.GetFeatureText( 'generic_material_earthware' )] and encircled with depictions of [newly_created_artifact.GetFeatureText( 'decoration_pattern' )]"
+
  ilyanil_name: "Ilyaníl"
  ilyanil_desc: "[ilyanil|E] was bestowed to $Ilione$ by her father, [alnars|E]. It is said that out of all his progenies, she alone is most proficient in the art of war and strife."
+
+ aidokyne_name: "Aïdókynē"
+ aidokyne_desc: "An opulent crown that belonged to Aristeús, an ancient ruler of the old [narsokratia|E] said to be one of the greatest. Alas, the crown was lost to time and had only recently and inexplicably appeared on [strato|E] hands."
+
+ athanaton_name: "Athánaton"
+ athanaton_desc: "An antiquate cuirass lacquered in silver, worn by a soldier during the height of the $game_concept_selianes$."
+
+ wanaktika_name: "Wanaktiká"
+ wanaktika_desc: "A feather used by [eumelos|E] throughout his lifetime to write passages of his works. After losing a wager, he gifted his writing tool to an ancestor of [alnars|E]."
+
+ peithous_perone_name: "Peithoûs Perónē"
+ peithous_perone_desc: "Ruby-filled brooch giving the impression of jewelry made from blood. This item was plundered by [ilione|E] during one of her raids."
+
+ metidos_daktylios_name: "Mētídos Daktýlios"
+ metidos_daktylios_desc: "A plain band, worn thin, that [stiano|E] is said to have been bestowed to an ancient deceiver."
+
+ phokados_hormos_name: "Phōkádos Hórmos"
+ phokados_hormos_desc: "A necklace of gold beads with incriptions dedicated to [phokas|E]. It's said that this old heirloom was cajoled into the possesion of [strato|E] after deceiving it's previous owner."
+
+ dolos_name: "Dólos"
+ dolos_desc: "A narrow blade kept in a sleeve rather than a scabbard. $dolos_name$ is always carried in secret by [strato|E], unbeknownst to his peers."
+
+ pelekys_stenalou_name: "Pélekys Stenálou"
+ pelekys_stenalou_desc: "An antiquate, ornate bow etched with intricate patterns. Passed down through many $game_concept_selianes$ even before their exile, the origins of this item passed down from [alnars_adj|E] line is unknown."
+
+ aspis_alnars_name: "Aspís Alnárs"
+ aspis_alnars_desc: "The shield [alnars|E] carried at the head of the first [Glossary( 'Misthophóroi', 'MISTHIOS_GLOSS' )]."

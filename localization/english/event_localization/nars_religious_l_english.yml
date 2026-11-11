@@ -61,18 +61,6 @@
  nars_religious.1003.a: "Everything I see #emp are#! their aspects..."
  nars_religious.1003.flavor: "What are the aspect of cow-dung, I wonder?"
 
- nars_religious.1004.t: "Mustérion tês Písteōs"
- nars_religious.1004.desc: "The vestal in front tells me if I immerse myself in faith deeply enough, it will reveal which divine is meant to guide me.\n\nThe choices are certainly imposing. Do I dedicate myself to [narses|E], whose dominion sounds suspiciously like an invitation to do more paperwork? Do I seek the favor of [phokas|E] to ensure my coffers remain full? Or do I embrace [enuo|E], who promises bloodshed and fertility; both of which sound like a dreadful amount of physical exertion. Well, perhaps I'll flip a coin to decide...? Wait, that #emp probably#! won't work, would it?\n\n #flavor "Gods reveal themselves in many ways." - $alnars_anduril$"
- nars_religious.1004.a: "My mind drifts to $game_concept_narses$, to learning."
- nars_religious.1004.a.flavor: "Tower of Reason,\nSpirit of Learning,\nPatron to Innovation,\nInsatiable $game_concept_narses$."
- nars_religious.1004.b: "$game_concept_phokas$' focus on levities are quite amusing!"
- nars_religious.1004.b.flavor: "God of Contracts,\nFortune Incarnate,\nGuardian of Roads,\nMercantile $game_concept_phokas$."
- nars_religious.1004.c: "My blood boils for $game_concept_enuo$, for me to let loose."
- nars_religious.1004.c.flavor: "Mistress of Time,\nWitness to All History,\nWhore of Bloodshed,\nEverlasting $game_concept_enuo$."
- nars_religious.1004.d:0 "I am not #emp yet#! ready to decide."
- nars_religious.1004.d.tt: "You remain as whence you came—for now."
- nars_religious.1004.flavor:0 "There is no shame in waiting until I am certain."
-
  nars_religious.3010.t:0 "Kakías Apékhou"
  nars_religious.3010.desc:0 "A careless step backward, a sickening crash, and a terracotta vase lies in shattered fragments across the sanctuary floor. Before the echoes even fade from the marble halls, [priest.GetFirstNameNoTooltip] rushes into the room, her eyes wide with shock and rage.\n\nShe finds me standing over the wreckage alongside [victim.GetFirstNameNoTooltip], a simple-minded attendant whose wits have been scattered since birth. The priestess' sharp gaze darts between myself and the trembling, uncomprehending servant. 'Who has desecrated the god's property?' she demands. The truth is heavy on my tongue, but the perfect scapegoat is standing right beside me.\n\n#flavor "The man who does wrong is more wretched than the man who suffers it." - $alnars_anduril$#!"
  nars_religious.3010.a:0 "I was the one who did it."

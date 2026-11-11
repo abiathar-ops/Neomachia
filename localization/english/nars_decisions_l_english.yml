@@ -85,8 +85,6 @@
  decision_patron_hero_desc: "From $nars_positive_afterlife$, the divine [heroes|E] watch the struggles of mortals and weigh the temper of our souls. It is mayhaps the time to choose a patron whose virtues shall shape and steady my hand and heart before [ROOT.GetCharacter.GetFaith.HighGodName] and the sacred, eternal [politeion|E]. I #emp will#! bind my life with an ordinance of old.\n\n#flavor "Hark! Go tell the $game_concept_selians$, fated fleeting wayfarer, that here, everlasting, obedient to their ordinances we now lie still.” - Unknown, Old Epigrams.#!"
  decision_patron_hero_tooltip: "Choose a patron hero by whose virtues you shall live"
  decision_patron_hero_confirm: "I #emp may#! have decided"
- decision_patron_hero_dulia_tt: "The [GetTenetType('tenet_dulia').GetBaseName] tenet must be permitted or [core|E] to the [faith|E]"
- decision_patron_hero_personal_tenet_tt: "Must have [GetTenetType('tenet_dulia').GetBaseName] as a [personal_tenet|E]"
  decision_patron_hero_alnars: "Hero $Alnars$ '$nick_soter$'"
  decision_patron_hero_eumelos: "Hero $Eumelos$"
  decision_patron_hero_orkheus: "Hero $Orkheus$ I"

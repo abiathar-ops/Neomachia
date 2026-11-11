@@ -1,8 +1,8 @@
 ﻿l_english:
  game_concept_selian: "Selian"
- game_concept_selian_adj: "Selian'"
+ game_concept_selian_adj: "Selian's"
  game_concept_selians: "Selians"
- game_concept_selians_adj: "Selian's'"
+ game_concept_selians_adj: "Selians'"
  game_concept_selianes: "Seliánēs"
  game_concept_selianes_adj: "Seliánēs'"
  game_concept_selians_desc: "The Seliánēs are a long thought to be extinct ethnicity. Despite having a tradition of art and innovation, they are notorious for their chauvinistic pride and arrogance.\n\nCharacterized by their blond-silvery locks, Selians are able to maintain their youth much longer as they inexplicably age slower than other ethnicities in the wider known world.\n\n#flavor "We are lovers of beauty, yet simple in tastes, and we cultivate minds without losing strength." - $alnars_anduril$"
@@ -39,7 +39,7 @@
  game_concept_politeion_desc: "The [Glossary('Politeíon', 'POLITEION_GLOSS')] is the conglomeration of all deities of the $game_concept_selianes$. They serve as a central pillar of $game_concept_selianes$, each embodying distinct aspects of life and nature since [alva_term|E].\n\n#flavor "Of the gods, some cause the world to exist, others animate it, others harmonize it, and others guard it. Together, these aspects are but a work-council in unison." - $alnars_anduril$"
 
  game_concept_narsil: "$narsil_name$"
- game_concept_narsil_desc: "The fabled hand-and-a-half longsword $narsil_name$ is the most famous of $game_concept_selianes$ ancestral swords that was shattered during their people's fall. The $narsil_shards_name$ had since been passed down until inherited by [alnars|E] '$nick_soter$' at last.\n\n#flavor "The hero pulled out his longsword, $narsil_name$, from its sheath which the gods had bequathed to him." - $alnars_anduril$#!"
+ game_concept_narsil_desc: "The fabled hand-and-a-half longsword $narsil_name$ is the most famous of $game_concept_selianes$ ancestral swords that was shattered during their people's fall. The $narsil_shards_name$ had since been passed down until inherited by [alnars|E] '$nick_soter$' at last.\n\n#flavor "The hero pulled out his longsword, $narsil_name$, from its sheath which the gods had bequeathed to him." - $alnars_anduril$#!"
 
  game_concept_anduril: "$anduril_name$"
  game_concept_anduril_desc: "Compiled by [alnars|E] before his calling as the leader of the first [Glossary( 'Misthophóroi', 'MISTHIOS_GLOSS' )], $anduril_name$ is a scroll detailing the records of a much forgotten $game_concept_selianes$ hegemony crystallized and organized into one singular work. Along with it, additionally, are also teachings and selected works of the '$nick_soter$' himself. \n\n#flavor "These are the works of my father, which he compiled, in the hope of thereby preserving from decay what men have done, and of preventing the greatness of the $game_concept_selianes$ from losing their due meed of glory." - $Eleios$, On the $anduril_name$.#!"
@@ -61,7 +61,7 @@
 
  game_concept_stelanos: "$Stelanos$"
  game_concept_stelanos_possessive: "$game_concept_stelanos$'"
- game_concept_stelanos_desc: "One of the deified heroes surviving records, Stélanos was supposedly born of [stiano|E] and a mortal consort. Folktales record his campaigns against fractious kingdoms and their consolidation into [narsokratia|E] earning him the epithet '$nick_soter$'. Mentions of $Stelanos$ persists over many centuries, unusual even considering the longer lifespan of a $game_concept_selianes$.\n\nThis peculiar fact along with his monumental achievements made his existence mythical and has even led many to even suggest that Stélanos was not one character, but a number of figures who were mistakenly kept under a one name.\n\n#flavor “$game_concept_stelanos$ conquered the world and ascended to $nars_positive_afterlife$; The gods granted him strength, but he won for himself an eternity with his deeds and legacy.” - $alnars_anduril$#!"
+ game_concept_stelanos_desc: "One of the deified heroes surviving records, Stélanos was supposedly born of [stiano|E] and a mortal consort. Folktales record his campaigns against fractious kingdoms and their consolidation into [narsokratia|E] earning him the epithet '$nick_megas$'. Mentions of $Stelanos$ persists over many centuries, unusual even considering the longer lifespan of a $game_concept_selianes$.\n\nThis peculiar fact along with his monumental achievements made his existence mythical and has even led many to even suggest that Stélanos was not one character, but a number of figures who were mistakenly kept under a one name.\n\n#flavor “$game_concept_stelanos$ conquered the world and ascended to $nars_positive_afterlife$; The gods granted him strength, but he won for himself an eternity with his deeds and legacy.” - $alnars_anduril$#!"
 
  game_concept_eleios: "$Eleios$"
  game_concept_eleios_possessive: "$Eleios$'"
@@ -69,7 +69,7 @@
 
  game_concept_ilione: "$Ilione$"
  game_concept_ilione_possessive: "$game_concept_ilione$'s"
- game_concept_ilione_desc: "A second daughter to [alnars|E] '$nick_soter$', $game_concept_ilione$ abandoned the dream for [narsokratia|E] to fully embrace the brutal path of the [Glossary( 'Misthophóroi', 'MISTHIOS_GLOSS' )]. Feared as a bloodthirsty butcher by her enemies, she commands her regiments with ruthless efficiency, caring little for her controversial reputation or the whispers regarding her unashamed lasciviousness.\n\n#flavor "Order $Ilione$ to attack some thousand men in such and such a direction, it'll be done in a flash. But left alone in court, she was an imbecile without sense." - $Eleios$, On the Road.#!"
+ game_concept_ilione_desc: "A first daughter to [alnars|E] '$nick_soter$', $game_concept_ilione$ abandoned the dream for [narsokratia|E] to fully embrace the brutal path of the [Glossary( 'Misthophóroi', 'MISTHIOS_GLOSS' )]. Feared as a bloodthirsty butcher by her enemies, she commands her regiments with ruthless efficiency, caring little for her controversial reputation or the whispers regarding her unashamed lasciviousness.\n\n#flavor "Order $Ilione$ to attack some thousand men in such and such a direction, it'll be done in a flash. But left alone in court, she was an imbecile without sense." - $Eleios$, On the Road.#!"
 
  game_concept_strato: "$Strato$"
  game_concept_strato_possessive: "$game_concept_strato$'s"

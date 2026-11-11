@@ -155,6 +155,18 @@ selian_diplomacy_entreaty_effect = {
                 random_child = { limit = { has_character_modifier = eleios_modifier } save_scope_as = target_1 }
             }
         }
+
+        # Find Ilione and Strato explicitly so Strato's destination is certain
+        if = {
+            limit = { has_character_modifier = ilione_modifier }
+            save_scope_as = ilione
+        }
+        else = {
+            scope:target_1 = { save_scope_as = ilione }
+        }
+        father = {
+            random_child = { limit = { has_character_modifier = strato_modifier } save_scope_as = strato }
+        }
         
         random_list = {
             # Success: Target 1 joins your court along with their followers
@@ -163,7 +175,7 @@ selian_diplomacy_entreaty_effect = {
                     add = 25
                     scope:target_1 = { opinion = { target = root value >= 50 } }
                 }
-                
+
                 send_interface_message = {
                     title = selian_diplomacy_joins_toast_t
                     desc = selian_diplomacy_joins_toast_tt
@@ -181,6 +193,13 @@ selian_diplomacy_entreaty_effect = {
                         add_courtier = scope:target_1 
                         return_to_court = yes 
                     }
+
+                    # Accepting the entreaty means adopting the inviter's rite (and faith, if it differs)
+                    if = {
+                        limit = { NOT = { faith = root.faith } }
+                        set_character_faith = root.faith
+                    }
+                    set_character_rite = root.rite
                     
                     hidden_effect = {
                         every_in_list = {
@@ -188,6 +207,24 @@ selian_diplomacy_entreaty_effect = {
                             limit = { NOT = { liege_or_court_owner = root } }
                             root = { add_courtier = prev }
                             remove_trait = adventurer_follower
+                        }
+                    }
+                }
+
+                # Strato joins Eleios only if Eleios won the diplomacy; otherwise he stays with Ilione
+                if = {
+                    limit = { exists = scope:strato }
+                    if = {
+                        limit = { has_character_modifier = eleios_modifier }
+                        if = {
+                            limit = { NOT = { scope:strato.liege_or_court_owner = root } }
+                            add_courtier = scope:strato
+                        }
+                    }
+                    else = {
+                        if = {
+                            limit = { NOT = { scope:strato.liege_or_court_owner = scope:ilione } }
+                            scope:ilione = { add_courtier = scope:strato }
                         }
                     }
                 }
@@ -211,6 +248,15 @@ selian_diplomacy_entreaty_effect = {
                         reason = rival_claimant_fight
                         target = root
                     } 
+                }
+
+                # Failed entreaty: Strato stays with Ilione's separated camp
+                if = {
+                    limit = {
+                        exists = scope:strato
+                        NOT = { scope:strato.liege_or_court_owner = scope:ilione }
+                    }
+                    scope:ilione = { add_courtier = scope:strato }
                 }
             }
         }

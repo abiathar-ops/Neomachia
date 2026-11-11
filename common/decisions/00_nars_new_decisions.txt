@@ -530,26 +530,15 @@ decision_patron_hero = {
 	is_shown = {
 		# Nars specific
 		religion ?= religion:nars_religion
+		rite = { rite_has_parameter = enable_patron_hero }
 		NOT = { has_variable = nars_chose_patron_hero_var }
 	}
 
 	is_valid_showing_failures_only = {
 		piety_level > 0
-		# custom_tooltip = {
-		# 	text = decision_patron_hero_dulia_tt
-		# 	rite = {
-		# 		has_at_least_tenet_status = {
-		# 			tenet = tenet_dulia
-		# 			status = permitted
-		# 		}
-		# 	}		
-		# }
-		# custom_tooltip = {
-		# 	text = decision_patron_hero_personal_tenet_tt
-		# 	has_personal_tenet_flag = tenet_dulia_can_select_patron_hero
-		# }
+		rite = { rite_has_parameter = enable_patron_hero }
 	}
-	
+
 	widget = {
 		gui = "decision_view_widget_option_list_generic"
 		controller = decision_option_list_controller

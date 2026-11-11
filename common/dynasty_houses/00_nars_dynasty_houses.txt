@@ -1,4 +1,5 @@
-﻿house_nars_1001 = {
-	name = name_house_nars_1001
-	dynasty = dyn_nars_1001
+﻿house_naresios = {
+	name = dynn_Naresios
+	dynasty = dynn_naresios
+	motto = dynn_Canossa_motto
 }

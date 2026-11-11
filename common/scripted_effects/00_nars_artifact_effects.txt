@@ -1,0 +1,271 @@
+﻿# Create effects for the holy relics of the Politeion. Call with the future owner as scope (like create_ilyanil_effect).
+
+create_aidokyne_effect = {
+	if = {
+		limit = {
+			has_dlc_feature = royal_court
+		}
+		create_artifact = {
+			name = aidokyne_name
+			description = aidokyne_desc
+			modifier = artifact_aidokyne_modifier
+			template = aidokyne_template
+			type = helmet
+			visuals = pedestal_justinian
+
+			owner = root
+			wealth = 3000
+			quality = 100
+
+			save_scope_as = newly_created_artifact
+			history = {
+				type = created_before_history
+			}
+		}
+
+		scope:newly_created_artifact = {
+			set_artifact_rarity_illustrious = yes
+			set_variable = { name = historical_unique_artifact value = yes }
+		}
+	}
+}
+
+create_athanaton_effect = {
+	if = {
+		limit = {
+			has_dlc_feature = royal_court
+		}
+		create_artifact = {
+			name = athanaton_name
+			description = athanaton_desc
+			modifier = artifact_athanaton_modifier
+			template = athanaton_template
+			type = armor_lamellar
+			visuals = armor
+
+			owner = root
+			wealth = 3000
+			quality = 100
+
+			save_scope_as = newly_created_artifact
+			history = {
+				type = created_before_history
+			}
+		}
+
+		scope:newly_created_artifact = {
+			set_artifact_rarity_illustrious = yes
+			set_variable = { name = historical_unique_artifact value = yes }
+		}
+	}
+}
+
+create_wanaktika_effect = {
+	if = {
+		limit = {
+			has_dlc_feature = royal_court
+		}
+		create_artifact = {
+			name = wanaktika_name
+			description = wanaktika_desc
+			modifier = artifact_wanaktika_modifier
+			template = wanaktika_template
+			type = regalia
+			visuals = bird_feather
+
+			owner = root
+			wealth = 3000
+			quality = 100
+
+			save_scope_as = newly_created_artifact
+			history = {
+				type = created_before_history
+			}
+		}
+
+		scope:newly_created_artifact = {
+			set_artifact_rarity_illustrious = yes
+			set_variable = { name = historical_unique_artifact value = yes }
+		}
+	}
+}
+
+create_peithous_perone_effect = {
+	if = {
+		limit = {
+			has_dlc_feature = royal_court
+		}
+		create_artifact = {
+			name = peithous_perone_name
+			description = peithous_perone_desc
+			modifier = artifact_peithous_perone_modifier
+			template = peithous_perone_template
+			type = brooch
+			visuals = brooch
+
+			owner = root
+			wealth = 3000
+			quality = 100
+
+			save_scope_as = newly_created_artifact
+			history = {
+				type = created_before_history
+			}
+		}
+
+		scope:newly_created_artifact = {
+			set_artifact_rarity_illustrious = yes
+			set_variable = { name = historical_unique_artifact value = yes }
+		}
+	}
+}
+
+create_metidos_daktylios_effect = {
+	if = {
+		limit = {
+			has_dlc_feature = royal_court
+		}
+		create_artifact = {
+			name = metidos_daktylios_name
+			description = metidos_daktylios_desc
+			modifier = artifact_metidos_daktylios_modifier
+			template = metidos_daktylios_template
+			type = ring
+			visuals = ring
+
+			owner = root
+			wealth = 3000
+			quality = 100
+
+			save_scope_as = newly_created_artifact
+			history = {
+				type = created_before_history
+			}
+		}
+
+		scope:newly_created_artifact = {
+			set_artifact_rarity_illustrious = yes
+			set_variable = { name = historical_unique_artifact value = yes }
+		}
+	}
+}
+
+create_phokados_hormos_effect = {
+	if = {
+		limit = {
+			has_dlc_feature = royal_court
+		}
+		create_artifact = {
+			name = phokados_hormos_name
+			description = phokados_hormos_desc
+			modifier = artifact_phokados_hormos_modifier
+			template = phokados_hormos_template
+			type = necklace
+			visuals = necklace
+
+			owner = root
+			wealth = 3000
+			quality = 100
+
+			save_scope_as = newly_created_artifact
+			history = {
+				type = created_before_history
+			}
+		}
+
+		scope:newly_created_artifact = {
+			set_artifact_rarity_illustrious = yes
+			set_variable = { name = historical_unique_artifact value = yes }
+		}
+	}
+}
+
+create_dolos_effect = {
+	if = {
+		limit = {
+			has_dlc_feature = royal_court
+		}
+		create_artifact = {
+			name = dolos_name
+			description = dolos_desc
+			modifier = artifact_dolos_modifier
+			template = dolos_template
+			type = dagger
+			visuals = dagger
+
+			owner = root
+			wealth = 3000
+			quality = 100
+
+			save_scope_as = newly_created_artifact
+			history = {
+				type = created_before_history
+			}
+		}
+
+		scope:newly_created_artifact = {
+			set_artifact_rarity_illustrious = yes
+			set_variable = { name = historical_unique_artifact value = yes }
+		}
+	}
+}
+
+create_pelekys_stenalou_effect = {
+	if = {
+		limit = {
+			has_dlc_feature = royal_court
+		}
+		create_artifact = {
+			name = pelekys_stenalou_name
+			description = pelekys_stenalou_desc
+			modifier = artifact_pelekys_stenalou_modifier
+			template = pelekys_stenalou_template
+			type = bow
+			visuals = bow
+
+			owner = root
+			wealth = 3000
+			quality = 100
+
+			save_scope_as = newly_created_artifact
+			history = {
+				type = created_before_history
+			}
+		}
+
+		scope:newly_created_artifact = {
+			set_artifact_rarity_illustrious = yes
+			set_variable = { name = historical_unique_artifact value = yes }
+		}
+	}
+}
+
+create_aspis_alnars_effect = {
+	if = {
+		limit = {
+			has_dlc_feature = royal_court
+		}
+		create_artifact = {
+			name = aspis_alnars_name
+			description = aspis_alnars_desc
+			modifier = artifact_aspis_alnars_modifier
+			template = aspis_alnars_template
+			type = wall_big
+			visuals = wall_shield
+
+			owner = root
+			wealth = 3000
+			quality = 100
+
+			save_scope_as = newly_created_artifact
+			history = {
+				type = created_before_history
+			}
+		}
+
+		scope:newly_created_artifact = {
+			set_artifact_rarity_illustrious = yes
+			set_variable = { name = historical_unique_artifact value = yes }
+		}
+	}
+}

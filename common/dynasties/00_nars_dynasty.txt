@@ -1,4 +1,5 @@
-﻿dyn_nars_1001 = {
-	name = name_dyn_nars_1001
+﻿dynn_naresios = {
+	name = dynn_naresios
 	culture = selian
+	motto = dynn_Canossa_motto
 }
